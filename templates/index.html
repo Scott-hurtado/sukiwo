@@ -1,1 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{.titulo}} - Encuentra servicios extraordinarios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="/static/images/sukiwo-icon.png" type="image/png">
 
+    <!-- Estilos Sakura minimalistas -->
+    <link rel="stylesheet" href="/static/css/index/index.css">
+</head>
+<body>
+    <!-- Hero Section Moderno con Animaciones -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <!-- Contenido principal elegante -->
+                <div class="hero-text">
+                    
+                    <h1 class="hero-title fade-in">
+                        Encuentra el 
+                        <span class="highlight">servicio perfecto</span>
+                        para ti
+                    </h1>
+                    
+                    <p class="hero-subtitle fade-in">
+                        Conectamos talento excepcional con oportunidades únicas. Desde traducción profesional hasta servicios de hogar, todo en un solo lugar.
+                    </p>
+                    
+                    <!-- Búsqueda moderna con dropdown mejorado -->
+                    <div class="search-container fade-in">
+                        <form class="search-form">
+                            <div class="search-input-container">
+                                <input type="text" placeholder="¿Qué servicio necesitas hoy?" class="search-input" id="search-input">
+                                <div class="search-dropdown" id="search-dropdown">
+                                    <div class="dropdown-section">
+                                        <h4 class="dropdown-title">Sugerencias populares</h4>
+                                        <div class="suggestion-item">
+                                            <i class="fas fa-language"></i>
+                                            <span>Traducción de documentos</span>
+                                        </div>
+                                        <div class="suggestion-item">
+                                            <i class="fas fa-palette"></i>
+                                            <span>Diseño de logos</span>
+                                        </div>
+                                        <div class="suggestion-item">
+                                            <i class="fas fa-laptop-code"></i>
+                                            <span>Desarrollo web</span>
+                                        </div>
+                                        <div class="suggestion-item">
+                                            <i class="fas fa-music"></i>
+                                            <span>Clases de música</span>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-section">
+                                        <h4 class="dropdown-title">Servicios recientes</h4>
+                                        <div class="suggestion-item">
+                                            <i class="fas fa-chart-line"></i>
+                                            <span>Consultoría empresarial</span>
+                                        </div>
+                                        <div class="suggestion-item">
+                                            <i class="fas fa-camera"></i>
+                                            <span>Fotografía profesional</span>
+                                        </div>
+                                        <div class="suggestion-item">
+                                            <i class="fas fa-pen"></i>
+                                            <span>Redacción de contenidos</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category-dropdown">
+                                <div class="category-select-custom" id="category-select">
+                                    <span class="selected-category">Todas las categorías</span>
+                                    <i class="fas fa-chevron-down dropdown-arrow"></i>
+                                    <div class="category-dropdown-menu" id="category-dropdown-menu">
+                                        <div class="dropdown-section">
+                                            <h4 class="dropdown-title">Categorías populares</h4>
+                                            <div class="category-option" data-value="">
+                                                <i class="fas fa-th-large"></i>
+                                                <span>Todas las categorías</span>
+                                            </div>
+                                            <div class="category-option" data-value="diseno">
+                                                <i class="fas fa-palette"></i>
+                                                <span>Diseño Gráfico</span>
+                                            </div>
+                                            <div class="category-option" data-value="tecnologia">
+                                                <i class="fas fa-laptop-code"></i>
+                                                <span>Programación</span>
+                                            </div>
+                                            <div class="category-option" data-value="traduccion">
+                                                <i class="fas fa-language"></i>
+                                                <span>Traducción</span>
+                                            </div>
+                                            <div class="category-option" data-value="musica">
+                                                <i class="fas fa-music"></i>
+                                                <span>Música</span>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-section">
+                                            <h4 class="dropdown-title">Más categorías</h4>
+                                            <div class="category-option" data-value="marketing">
+                                                <i class="fas fa-bullhorn"></i>
+                                                <span>Marketing Digital</span>
+                                            </div>
+                                            <div class="category-option" data-value="hogar">
+                                                <i class="fas fa-home"></i>
+                                                <span>Hogar</span>
+                                            </div>
+                                            <div class="category-option" data-value="educacion">
+                                                <i class="fas fa-graduation-cap"></i>
+                                                <span>Educación</span>
+                                            </div>
+                                            <div class="category-option" data-value="fotografia">
+                                                <i class="fas fa-camera"></i>
+                                                <span>Fotografía</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="search-btn">
+                                <i class="fas fa-search"></i>
+                                Buscar
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <!-- Estadísticas elegantes -->
+                    <div class="stats fade-in">
+                        <div class="stat">
+                            <span class="stat-number">5K+</span>
+                            <span class="stat-label">Profesionales Expertos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">12K+</span>
+                            <span class="stat-label">Proyectos Completados</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Galería de Profesionales Animada -->
+                <div class="hero-professionals">
+                    <div class="professionals-grid">
+                        <!-- Columna 1 - Movimiento hacia arriba -->
+                        <div class="professionals-column column-up">
+                            <!-- Imagen circular -->
+                            <div class="professional-image circular">
+                                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b4e0?w=240&h=240&fit=crop&crop=face" alt="Profesional 1">
+                            </div>
+                            <!-- Imagen rectangular -->
+                            <div class="professional-image rectangular">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=240&h=320&fit=crop&crop=face" alt="Profesional 2">
+                            </div>
+                            <!-- Imagen circular -->
+                            <div class="professional-image circular">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=240&h=240&fit=crop&crop=face" alt="Profesional 3">
+                            </div>
+                            <!-- Imagen rectangular -->
+                            <div class="professional-image rectangular">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=240&h=320&fit=crop&crop=face" alt="Profesional 4">
+                            </div>
+                            <!-- Imagen circular -->
+                            <div class="professional-image circular">
+                                <img src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?w=240&h=240&fit=crop&crop=face" alt="Profesional 5">
+                            </div>
+                        </div>
+                        
+                        <!-- Columna 2 - Movimiento hacia abajo -->
+                        <div class="professionals-column column-down">
+                            <!-- Imagen rectangular -->
+                            <div class="professional-image rectangular">
+                                <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=240&h=320&fit=crop&crop=face" alt="Profesional 6">
+                            </div>
+                            <!-- Imagen circular -->
+                            <div class="professional-image circular">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=240&h=240&fit=crop&crop=face" alt="Profesional 7">
+                            </div>
+                            <!-- Imagen rectangular -->
+                            <div class="professional-image rectangular">
+                                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=240&h=320&fit=crop&crop=face" alt="Profesional 8">
+                            </div>
+                            <!-- Imagen circular -->
+                            <div class="professional-image circular">
+                                <img src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=240&h=240&fit=crop&crop=face" alt="Profesional 9">
+                            </div>
+                            <!-- Imagen rectangular -->
+                            <div class="professional-image rectangular">
+                                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=240&h=320&fit=crop&crop=face" alt="Profesional 10">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categorías estilo compacto con imágenes curvadas -->
+    <section class="section categories" id="categories">
+        <div class="container">
+            <h2 class="section-title fade-in">Explora por categorías</h2>
+            <p class="section-subtitle fade-in">Encuentra exactamente lo que necesitas</p>
+            
+            <div class="categories-compact-container" role="list">
+                <div class="category-compact-card fade-in" role="listitem" tabindex="0" data-category="diseno">
+                    <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=140&h=100&fit=crop" alt="Diseño Gráfico" width="140" height="100">
+                    <div class="card-text">
+                        Diseño Gráfico
+                    </div>
+                </div>
+
+                <div class="category-compact-card fade-in" role="listitem" tabindex="0" data-category="tecnologia">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=140&h=100&fit=crop" alt="Programación" width="140" height="100">
+                    <div class="card-text">
+                        Programación &<br>Tech
+                    </div>
+                </div>
+
+                <div class="category-compact-card fade-in" role="listitem" tabindex="0" data-category="traduccion">
+                    <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=140&h=100&fit=crop" alt="Traducción" width="140" height="100">
+                    <div class="card-text">
+                        Escritura &<br>Traducción
+                    </div>
+                </div>
+
+                <div class="category-compact-card fade-in" role="listitem" tabindex="0" data-category="musica">
+                    <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=140&h=100&fit=crop" alt="Música" width="140" height="100">
+                    <div class="card-text">
+                        Audio &<br>Música
+                    </div>
+                </div>
+
+                <div class="category-compact-card fade-in" role="listitem" tabindex="0" data-category="marketing">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=140&h=100&fit=crop" alt="Marketing Digital" width="140" height="100">
+                    <div class="card-text">
+                        Marketing<br>Digital
+                    </div>
+                </div>
+
+                <div class="category-compact-card fade-in" role="listitem" tabindex="0" data-category="hogar">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=140&h=100&fit=crop" alt="Servicios Hogar" width="140" height="100">
+                    <div class="card-text">
+                        Servicios<br>Hogar
+                    </div>
+                </div>
+
+                <div class="category-compact-card fade-in" role="listitem" tabindex="0" data-category="educacion">
+                    <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=140&h=100&fit=crop" alt="Educación" width="140" height="100">
+                    <div class="card-text">
+                        Educación &<br>Tutoría
+                    </div>
+                </div>
+
+                <div class="category-compact-card fade-in" role="listitem" tabindex="0" data-category="fotografia">
+                    <img src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=140&h=100&fit=crop" alt="Fotografía" width="140" height="100">
+                    <div class="card-text">
+                        Fotografía &<br>Video
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios recientes estilo moderno -->
+    <section class="section featured-services" id="services">
+        <div class="container">
+            <h2 class="section-title fade-in">Servicios recientes</h2>
+            <p class="section-subtitle fade-in">Los mejores profesionales te esperan</p>
+            
+            <div class="services-container" role="list">
+                {{range .servicios}}
+                <article class="service-card fade-in" role="listitem" aria-label="Service card: {{.Titulo}}">
+                    <div class="card-image-wrapper">
+                        <img src="/static/images/services/{{.Imagen}}" alt="{{.Titulo}}" width="360" height="202" onerror="this.src='https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=360&h=202&fit=crop'">
+                        <button class="heart-icon" aria-label="Add to favorites">
+                            <i class="far fa-heart" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="card-content">
+                        <div class="author">
+                            <img src="/static/images/avatars/{{.ID}}.jpg" alt="Avatar of {{.Proveedor}}" width="24" height="24" onerror="this.src='https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=24&h=24&fit=crop&crop=face'">
+                            <span class="author-name">{{.Proveedor}}</span>
+                        </div>
+                        
+                        <div class="title">{{.Titulo}}</div>
+                        
+                        <div class="stats" aria-label="Ratings, sales and views">
+                            <span class="star" aria-label="Star rating {{.Rating}}">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <span>{{.Rating}} ({{len .Tags}})</span>
+                            </span>
+                            <span aria-label="Sales 12">
+                                <i class="fas fa-shopping-basket" aria-hidden="true"></i>
+                                <span>12 sales</span>
+                            </span>
+                            <span aria-label="Views 245">
+                                <i class="fas fa-eye" aria-hidden="true"></i>
+                                <span>245 views</span>
+                            </span>
+                        </div>
+                        
+                        <div class="footer">
+                            <div class="from">
+                                From <span class="price">${{.Precio}}</span>
+                            </div>
+                            <div class="time">
+                                <i class="far fa-clock" aria-hidden="true"></i>
+                                3 days
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                {{end}}
+            </div>
+            
+            <div class="section-action">
+                <button class="btn btn-outline">Ver todos los servicios</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="section blog-section" id="blog">
+        <div class="container">
+            <h2 class="section-title fade-in">Blog y recursos</h2>
+            <p class="section-subtitle fade-in">Consejos, tutoriales y noticias del mundo freelance</p>
+            
+            <div class="blog-container" role="list">
+                <article class="blog-card fade-in" role="listitem">
+                    <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=380&h=215&fit=crop" alt="Portafolio profesional en laptop" width="380" height="215">
+                    <div class="blog-meta">
+                        <a href="#">Diseño</a>
+                        <span>•</span>
+                        <span>15 Nov 2024</span>
+                    </div>
+                    <h2 class="blog-title">Cómo crear un portafolio profesional que destaque</h2>
+                </article>
+
+                <article class="blog-card fade-in" role="listitem">
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=380&h=215&fit=crop" alt="Calculadora y documentos de precios" width="380" height="215">
+                    <div class="blog-meta">
+                        <a href="#">Negocios</a>
+                        <span>•</span>
+                        <span>12 Nov 2024</span>
+                    </div>
+                    <h2 class="blog-title">Estrategias de precios para freelancers</h2>
+                </article>
+
+                <article class="blog-card fade-in" role="listitem">
+                    <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=380&h=215&fit=crop" alt="Diseño web moderno en pantalla" width="380" height="215">
+                    <div class="blog-meta">
+                        <a href="#">Tecnología</a>
+                        <span>•</span>
+                        <span>10 Nov 2024</span>
+                    </div>
+                    <h2 class="blog-title">Tendencias en diseño web para 2025</h2>
+                </article>
+            </div>
+            
+            <div class="section-action">
+                <button class="btn btn-outline">Ver todos los artículos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proceso simplificado -->
+    <section class="section how-it-works" id="how-it-works">
+        <div class="container">
+            <h2 class="section-title fade-in">Así de simple es</h2>
+            <p class="section-subtitle fade-in">Tres pasos para obtener el servicio perfecto</p>
+            
+            <div class="steps">
+                <div class="step fade-in">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="step-title">Busca</h3>
+                    <p class="step-description">Explora miles de servicios profesionales organizados por categorías</p>
+                </div>
+                
+                <div class="step fade-in">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="step-title">Conecta</h3>
+                    <p class="step-description">Comunícate directamente con profesionales verificados</p>
+                </div>
+                
+                <div class="step fade-in">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="step-title">Disfruta</h3>
+                    <p class="step-description">Recibe servicios de calidad y comparte tu experiencia</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA elegante -->
+    <section class="section provider-cta">
+        <div class="container">
+            <div class="cta-content fade-in">
+                <div class="cta-text">
+                    <h2 class="cta-title">¿Tienes un talento?</h2>
+                    <p class="cta-subtitle">Únete a nuestra comunidad de profesionales y comienza a generar ingresos hoy mismo</p>
+                    <ul class="cta-benefits">
+                        <li><i class="fas fa-check"></i> Define tus precios</li>
+                        <li><i class="fas fa-check"></i> Trabaja cuando quieras</li>
+                        <li><i class="fas fa-check"></i> Clientes verificados</li>
+                    </ul>
+                </div>
+                <div class="cta-actions">
+                    <button class="btn btn-primary">Empezar ahora</button>
+                    <button class="btn btn-outline">Conoce más</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript minimalista -->
+    <script src="/static/js/index/index.js"></script>
+</body>
+</html>
